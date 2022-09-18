@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+<div class="main-container">
+    <div class="main-content">
+        <div class="sub-container">
+            <%- include('partials/navbar'); %>
+
+            <div class="container" style="background-color: #4B3F56" id="work">
+                <div class="container-text">
+                    <h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;">My Work</h4>
+                    <h3>I have worked on multiple projects, some of which are :-</h3>
+                    <h4 style="color: white;">(You can click the links to be redirected)</h4>
+                    <ul>
+                        <a href="https://github.com/Sunehildeep/automaxfans-helios">
+                            <li>Auto Max Fans - Helios (A script for helios 300 laptop)</li></a>
+                        <a href="https://github.com/Sunehildeep/customfans-helios">
+                            <li>Custom Fans - Helios (A script for helios 300 laptop)</li></a>
+                        <a href="https://thejournalsy.herokuapp.com/">
+                            <li>A Journal Website (Currently In progress)</li></a>
+                        <a href="https://github.com/stars/Sunehildeep/lists/sa-mp">
+                            <li>SA:MP Scripts</li></a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer'); %>
+</div>
+<script src="/javascripts/script.js"></script>
+</body>
+</html>

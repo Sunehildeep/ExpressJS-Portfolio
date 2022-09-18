@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+<div class="main-container">
+    <div class="main-content">
+        <div class="sub-container">
+            <%- include('partials/navbar'); %>
+
+            <div class="container" style="background-color: #4B3F56" id="contactme">
+                <div class="container-text">
+                    <br><h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;">Contact Me</h4>
+                    <h3>You can contact me through the following handles :-</h3>
+                    <ul style=" background-color: #6d6875;">
+                        <li>Instagram - @sunehildeep.s_</li>
+                        <li>Email - nsunehil@gmail.com</li>
+                    </ul>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">First Name:</label><br>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your First Name">
+                        <br>
+
+                        <label for="exampleFormControlInput1">Last Name:</label><br>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Last Name">
+                        <br>
+
+                        <label for="exampleFormControlInput1">Contact Number:</label><br>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Contact Number">
+                        <br>
+
+                        <label for="exampleFormControlInput1">Email address:</label><br>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your E-mail">
+                        <br>
+                        <label for="exampleFormControlTextarea1">Message:</label><br>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Your Message"></textarea>
+                        <br>
+                        <br>
+                        <button id="submit" onclick="sendMail(); return false">Send Message</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer'); %>
+</div>
+<script src="/javascripts/script.js"></script>
+</body>
+</html>

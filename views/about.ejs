@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+<div class="main-container">
+    <div class="main-content">
+        <div class="sub-container">
+            <%- include('partials/navbar'); %>
+
+            <div class="container" style="background-color: #4B3F56" id="aboutme">
+                <div class="container-text">
+                   <h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;" >A Little Bit About Myself</h4>
+                    <img width="200px" alt="My Pic" src="/images/pic.jpg">
+                    <h3>Hi, I'm Sunehildeep Singh.
+                        I'm an undergraduate student studying artifical intelligence.
+                        <br>I love programming and I am doing it since I was 14 years old.
+                        <br>I have always loved learning new things related to this certain field and teaching others about it too. <br>
+                        <br>I've worked multiple projects in SA:MP Community and as a freelancher too.<br>
+                        SA-MP is a multiplayer community where players play different game modes in online servers. <br>
+                        I also worked on many projects in high-school to support them, made user control panels for websites for people. <br>
+                        In addition, I have worked on discord bots, web scrapers, game development, and software development as well.</h3>
+
+                        <a href="/files/resume.pdf">Link to my resume</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer'); %>
+</div>
+<script src="/javascripts/script.js"></script>
+</body>
+</html>
