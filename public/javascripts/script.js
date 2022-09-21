@@ -5,6 +5,10 @@
   Date: 18th Sept, 2022
  */
 
+/*
+
+The functions below are for the navigation bar animation while scrolling and also to change its header img if user is not in the index page.
+ */
 const myNav = document.getElementById('nav')
 
 const header = document.getElementById('navheader')
@@ -44,3 +48,16 @@ function toggleHeader(state) {
   }
 }
 
+function sendMessage() {
+  let name = encodeURIComponent(document.getElementById("firstName").value + " " +document.getElementById("lastName").value)
+  let email = encodeURIComponent(document.getElementById("emailAddress").value)
+  let message = encodeURIComponent(document.getElementById("messageBody").value);
+  let redirect = "mailto:nsunehil@gmail.com"
+      + "?cc=" + email
+      + "&subject=" + encodeURIComponent("Message from " + name)
+      + "&body=" + message
+
+  window.open(redirect)
+
+  window.location.href = "/"
+}
