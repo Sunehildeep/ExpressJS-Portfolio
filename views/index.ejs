@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-  <div class="main-container">
-    <div class="main-content">
-      <div class="sub-container">
-        <%- include('partials/navbar'); %>
-        <div class="container" id="#">
-          <div class="intro-text">
-            Welcome to my portfolio.
-            <br> Please feel free to look around and check my work.
-          </div>
-        </div>
-      </div>
-      <%- include('partials/footer'); %>
-    </div>
+<!--
+File name: index.ejs
+Student name: Sunehildeep Singh
+Student ID: 301210976
+Date: 18th Sept, 2022
+-->
+
+<!-- Include header and navbar. -->
+<%- include('partials/header'); %>
+<%- include('partials/navbar'); %>
+<!-- Intro section. -->
+<div class="container" id="#">
+  <div class="intro-text">
+    Welcome to my portfolio.
+    <br> Please feel free to look around and check my work.
   </div>
-  </body>
-  <script src="/javascripts/script.js"></script>
-</html>
+</div>
+<!-- Include footer. -->
+<%- include('partials/footer'); %>

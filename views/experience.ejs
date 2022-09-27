@@ -1,98 +1,92 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-<title><%= title %></title>
-<link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
+<!--
+File name: experience.ejs
+Student name: Sunehildeep Singh
+Student ID: 301210976
+Date: 18th Sept, 2022
+-->
+<!-- Include header and navbar. -->
+<%- include('partials/header'); %>
+<%- include('partials/navbar'); %>
 
-<div class="main-container">
-    <div class="main-content">
-        <div class="sub-container">
-            <%- include('partials/navbar'); %>
-
-            <div class="container" style="background-color: #4B3F56" id="experience">
-                <div class="container-text">
-                    <br><h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;">My Skills</h4>
-                    <h3>I'm experienced in the following languages :-</h3>
-                    <ul>
-                        <li>
-                            <img width="50px" src="/images/php.png">
-                            <div style="font-size: 80px;" class="c100 p55 center">
-                                <span>55%</span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img width="27px" src="/images/java.png">
-                            <div style="font-size: 80px;" class="c100 p75 center">
-                                <span>75%</span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img width="50px" src="/images/python.png">
-                            <div style="font-size: 80px;" class="c100 p55 center">
-                                <span>55%</span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img width="85px" src="/images/html.png">
-                            <div style="font-size: 80px;" class="c100 p80 center">
-                                <span>80%</span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img width="65px" src="/images/c.png">
-                            <div style="font-size: 80px;" class="c100 p80 center">
-                                <span>80%</span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img width="35px" src="/images/pawn.png">
-                            <div style="font-size: 80px;" class="c100 p90 center">
-                                <span>90%</span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img width="48px" src="/images/js.png">
-                            <div style="font-size: 80px;" class="c100 p70 center">
-                                <span>70%</span>
-                                <div class="slice">
-                                    <div class="bar"></div>
-                                    <div class="fill"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+<!-- Experience Section. -->
+<div class="container" style="background-color: #4B3F56" id="experience">
+    <div class="container-text">
+        <br><h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;">My Skills</h4>
+        <h3>I'm experienced in the following languages :-</h3>
+        <!-- Skills list -->
+        <ul>
+            <li>
+                <img width="50px" src="/images/php.png">
+                <div style="font-size: 80px;" class="c100 p55 center">
+                    <span>55%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </li>
+            <li>
+                <img width="27px" src="/images/java.png">
+                <div style="font-size: 80px;" class="c100 p75 center">
+                    <span>75%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img width="50px" src="/images/python.png">
+                <div style="font-size: 80px;" class="c100 p55 center">
+                    <span>55%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img width="85px" src="/images/html.png">
+                <div style="font-size: 80px;" class="c100 p80 center">
+                    <span>80%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img width="65px" src="/images/c.png">
+                <div style="font-size: 80px;" class="c100 p80 center">
+                    <span>80%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img width="35px" src="/images/pawn.png">
+                <div style="font-size: 80px;" class="c100 p90 center">
+                    <span>90%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img width="48px" src="/images/js.png">
+                <div style="font-size: 80px;" class="c100 p70 center">
+                    <span>70%</span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
-    <%- include('partials/footer'); %>
 </div>
-<script src="/javascripts/script.js"></script>
-</body>
-</html>
+<!-- Include footer -->
+<%- include('partials/footer'); %>

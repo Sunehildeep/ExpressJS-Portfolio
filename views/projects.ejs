@@ -1,54 +1,46 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
+<!--
+File name: projects.ejs
+Student name: Sunehildeep Singh
+Student ID: 301210976
+Date: 18th Sept, 2022
+-->
+<!-- Include header and navbar. -->
+<%- include('partials/header'); %>
+<%- include('partials/navbar'); %>
+<!-- Projects section. -->
+<div class="container" style="background-color: #4B3F56" id="work">
+    <div class="container-text">
+        <h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;">My Work</h4>
+        <h3>I have worked on multiple projects, some of which are :-</h3>
+        <h4 style="color: white;">(You can click the links to be redirected to GitHub)</h4>
+        <br>
+        <a href="https://thejournalsy.herokuapp.com/">
+            A Journal Website (Currently In progress)</a>
+        <h3>This is the latest project I have been working on. Making the usage of flask, python, javascript, html, and css,
+        this website allows you to create personal journal entries and track your mood and days. In addition, you can also
+        create reminders, to-do, listen songs and view the calendar. </h3>
+        <br>
+        <img style="width: 90%; display:block; margin-left: auto; margin-right: auto;" src="/images/website.png">
+        <br>
+        <a href="https://github.com/Sunehildeep/automaxfans-helios">
+            Auto Max Fans - Helios (A script for helios 300 laptop)</a>
 
-<div class="main-container">
-    <div class="main-content">
-        <div class="sub-container">
-            <%- include('partials/navbar'); %>
+        <h3>This little program allows you to customize fan temperature threshold automatically so that when the laptop overheats, it goes to max fans and back to auto when it cools down.</h3>
 
-            <div class="container" style="background-color: #4B3F56" id="work">
-                <div class="container-text">
-                    <h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;">My Work</h4>
-                    <h3>I have worked on multiple projects, some of which are :-</h3>
-                    <h4 style="color: white;">(You can click the links to be redirected to GitHub)</h4>
-                    <br>
-                    <a href="https://thejournalsy.herokuapp.com/">
-                        A Journal Website (Currently In progress)</a>
-                    <h3>This is the latest project I have been working on. Making the usage of flask, python, javascript, html, and css,
-                    this website allows you to create personal journal entries and track your mood and days. In addition, you can also
-                    create reminders, to-do, listen songs and view the calendar. </h3>
-                    <br>
-                    <img style="width: 90%; display:block; margin-left: auto; margin-right: auto;" src="/images/website.png">
-                    <br>
-                    <a href="https://github.com/Sunehildeep/automaxfans-helios">
-                        Auto Max Fans - Helios (A script for helios 300 laptop)</a>
+        <img style="display:block; margin-left: auto; margin-right: auto;" src="https://user-images.githubusercontent.com/23412507/188697655-b0ca9f83-40e3-41cb-90e6-894392b8fd42.png">
+        <br>
+        <a href="https://github.com/Sunehildeep/customfans-helios">
+            Custom Fans - Helios (A script for helios 300 laptop)</a>
+        <h3>This program allows you to make a custom fan curve for helios. Works for both cpu and gpu fan independently.
+        </h3>
+        <img style="display:block; margin-left: auto; margin-right: auto;" src="https://user-images.githubusercontent.com/23412507/191407736-1e916baf-f946-4940-bb32-2ffe59ecaa1e.png">
+        <br>
 
-                    <h3>This little program allows you to customize fan temperature threshold automatically so that when the laptop overheats, it goes to max fans and back to auto when it cools down.</h3>
+        <a href="https://github.com/stars/Sunehildeep/lists/sa-mp">
+            SA:MP Scripts</a>
+        <h3>These are a collection of packages I created for SA:MP (GTA San Andreas Multiplayer) Community back in 2016. I do not have screenshots of it at the moment but you can check my GitHub.</h3>
 
-                    <img style="display:block; margin-left: auto; margin-right: auto;" src="https://user-images.githubusercontent.com/23412507/188697655-b0ca9f83-40e3-41cb-90e6-894392b8fd42.png">
-                    <br>
-                    <a href="https://github.com/Sunehildeep/customfans-helios">
-                        Custom Fans - Helios (A script for helios 300 laptop)</a>
-                    <h3>This program allows you to make a custom fan curve for helios. Works for both cpu and gpu fan independently.
-                    </h3>
-                    <img style="display:block; margin-left: auto; margin-right: auto;" src="https://user-images.githubusercontent.com/23412507/191407736-1e916baf-f946-4940-bb32-2ffe59ecaa1e.png">
-                    <br>
-
-                    <a href="https://github.com/stars/Sunehildeep/lists/sa-mp">
-                        SA:MP Scripts</a>
-                    <h3>These are a collection of packages I created for SA:MP (GTA San Andreas Multiplayer) Community back in 2016. I do not have screenshots of it at the moment but you can check my GitHub.</h3>
-
-                </div>
-            </div>
-        </div>
     </div>
-    <%- include('partials/footer'); %>
 </div>
-<script src="/javascripts/script.js"></script>
-</body>
-</html>
+<!-- Include footer -->
+<%- include('partials/footer'); %>

@@ -1,54 +1,47 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
+<!--
+File name: contact.ejs
+Student name: Sunehildeep Singh
+Student ID: 301210976
+Date: 18th Sept, 2022
+-->
+<!-- Include header and navbar. -->
+<%- include('partials/header'); %>
+<%- include('partials/navbar'); %>
 
-<div class="main-container">
-    <div class="main-content">
-        <div class="sub-container">
-            <%- include('partials/navbar'); %>
+<!-- Contact me section -->
+<div class="container" style="background-color: #4B3F56" id="contactme">
+    <div class="container-text">
+        <br><h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;">Contact Me</h4>
+        <h3>You can contact me through the following handles :-</h3>
+        <ul style=" background-color: #6d6875;">
+            <li>Instagram - @sunehildeep.s_</li>
+            <li>Email - nsunehil@gmail.com</li>
+        </ul>
+        <!-- Contact form -->
+        <div class="form-group">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" class="form-control" id="firstName" placeholder="Your First Name">
+            <br>
 
-            <div class="container" style="background-color: #4B3F56" id="contactme">
-                <div class="container-text">
-                    <br><h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;">Contact Me</h4>
-                    <h3>You can contact me through the following handles :-</h3>
-                    <ul style=" background-color: #6d6875;">
-                        <li>Instagram - @sunehildeep.s_</li>
-                        <li>Email - nsunehil@gmail.com</li>
-                    </ul>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" class="form-control" id="lastName" placeholder="Your Last Name">
+            <br>
 
-                    <div class="form-group">
-                        <label for="firstName">First Name:</label><br>
-                        <input type="text" class="form-control" id="firstName" placeholder="Your First Name">
-                        <br>
+            <label for="contactNumber">Contact Number:</label><br>
+            <input type="text" class="form-control" id="contactNumber" placeholder="Your Contact Number">
+            <br>
 
-                        <label for="lastName">Last Name:</label><br>
-                        <input type="text" class="form-control" id="lastName" placeholder="Your Last Name">
-                        <br>
-
-                        <label for="contactNumber">Contact Number:</label><br>
-                        <input type="text" class="form-control" id="contactNumber" placeholder="Your Contact Number">
-                        <br>
-
-                        <label for="emailAddress">Email address:</label><br>
-                        <input type="email" class="form-control" id="emailAddress" placeholder="Your E-mail">
-                        <br>
-                        <label for="messageBody">Message:</label><br>
-                        <textarea class="form-control" id="messageBody" rows="4" placeholder="Your Message"></textarea>
-                        <br>
-                        <br>
-                        <button id="submit" onclick="sendMessage(); return false">Send Message</button>
-                    </div>
-
-                </div>
-            </div>
+            <label for="emailAddress">Email address:</label><br>
+            <input type="email" class="form-control" id="emailAddress" placeholder="Your E-mail">
+            <br>
+            <label for="messageBody">Message:</label><br>
+            <textarea class="form-control" id="messageBody" rows="4" placeholder="Your Message"></textarea>
+            <br>
+            <br>
+            <button id="submit" onclick="sendMessage(); return false">Send Message</button>
         </div>
+
     </div>
-    <%- include('partials/footer'); %>
 </div>
-<script src="/javascripts/script.js"></script>
-</body>
-</html>
+<!-- Include footer -->
+<%- include('partials/footer'); %>
