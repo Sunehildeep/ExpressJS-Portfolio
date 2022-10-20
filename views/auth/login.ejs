@@ -1,0 +1,41 @@
+<!--
+File name: login.ejs
+Student name: Sunehildeep Singh
+Student ID: 301210976
+Date: 18th October, 2022
+-->
+
+<!-- Include header and navbar. -->
+<%- include('../partials/header'); %>
+<%- include('../partials/navbar'); %>
+<!-- Login section. -->
+<div class="container" style="background-color: #4B3F56" id="login">
+    <div class="container-text">
+        <h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;" >Login Page</h4>
+        <!-- Message Area -->
+        <% if(messages.length > 0){%>
+            <h3><%= messages %></h3>
+        <%}%>
+        <!-- Contact form -->
+        <form method="POST" class="login-group">
+
+            <label for="username">Username:</label><br>
+            <input name="username" type="text" class="form-control" id="username" placeholder="Enter your username...">
+            <br>
+            <br>
+
+            <label for="password">Password:</label><br>
+            <input name="password" type="password" class="form-control" id="password" placeholder="Enter your password...">
+            <br>
+
+            <br>
+
+            <input type="submit" value="login" />
+        </form>
+
+        <p>Dont have an account? Click <a href="/register">here</a> to register.</p>
+
+    </div>
+</div>
+<!-- Include footer. -->
+<%- include('../partials/footer'); %>

@@ -1,0 +1,49 @@
+<!--
+File name: register.ejs
+Student name: Sunehildeep Singh
+Student ID: 301210976
+Date: 18th October, 2022
+-->
+
+<!-- Include header and navbar. -->
+<%- include('../partials/header'); %>
+<%- include('../partials/navbar'); %>
+<!-- Login section. -->
+<div class="container" style="background-color: #4B3F56" id="register">
+    <div class="container-text">
+        <h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;" >Register Page</h4>
+        <!-- Message Area -->
+        <% if(messages.length > 0){%>
+        <h3><%= messages %></h3>
+        <%}%>
+        <!-- Contact form -->
+        <form method="POST" class="login-group">
+
+            <label for="username">Username:</label><br>
+            <input name="username" type="text" class="form-control" id="username" placeholder="Enter your username...">
+            <br>
+            <br>
+
+            <label for="email">Email:</label><br>
+            <input name="email" type="text" class="form-control" id="email" placeholder="Enter your email...">
+            <br>
+            <br>
+
+            <label for="displayName">Display Name:</label><br>
+            <input name="displayName" type="text" class="form-control" id="displayName" placeholder="Enter your display name...">
+            <br>
+            <br>
+
+            <label for="password">Password:</label><br>
+            <input name="password" type="password" class="form-control" id="password" placeholder="Enter your password...">
+            <br>
+
+            <br>
+
+            <input type="submit" value="Register" />
+        </form>
+
+    </div>
+</div>
+<!-- Include footer. -->
+<%- include('../partials/footer'); %>

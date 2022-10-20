@@ -1,0 +1,36 @@
+<!--
+File name: edit.ejs
+Student name: Sunehildeep Singh
+Student ID: 301210976
+Date: 18th October, 2022
+-->
+
+<!-- Include header and navbar. -->
+<%- include('../partials/header'); %>
+<%- include('../partials/navbar'); %>
+<div class="container" style="background-color: #4B3F56" id="add">
+    <div class="container-text">
+        <h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;" ><%=title %></h4>
+        <form class="login-group" method="POST">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter contact name..." name="name" value="<%= contact.name%>" required />
+
+            <br>
+            <br>
+            <label for="number">Phone Number</label><br>
+            <input type="tel" id="number" placeholder="Enter phone number..." name="phone" value="<%= contact.number%>" required />
+            <br>
+            <br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter email..." name="email" value="<%= contact.email%>" required />
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+                <a href="/contact-list" class="btn btn-warning">Cancel Button</a>
+            </form>
+
+    </div>
+</div>
+<!-- Include footer. -->
+<%- include('../partials/footer'); %>

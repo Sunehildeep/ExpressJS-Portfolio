@@ -1,0 +1,60 @@
+<!--
+File name: contact-list.ejs
+Student name: Sunehildeep Singh
+Student ID: 301210976
+Date: 18th October, 2022
+-->
+
+<!-- Include header and navbar. -->
+<%- include('../partials/header'); %>
+<%- include('../partials/navbar'); %>
+<!-- Login section. -->
+<div class="container" style="background-color: #4B3F56" id="contactlist">
+    <div class="container-text">
+        <h4 style="margin-top: 20vh; font-family: 'The Nautigal', cursive; font-size: 35px; color: #CF9092;" >Contact List Page</h4>
+        <!-- Message Area -->
+        <% if(messages.length > 0){%>
+            <h3><%= messages %></h3>
+        <%}%>
+        <% if(typeof displayName == 'string' && displayName) { %>
+            <a href="/contact-list/add" role="button">Add a Contact</a>
+        <% } %>
+        <br />
+        <table class="form-group">
+            <!--Header Row -->
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <% if(typeof displayName == 'string' && displayName) { %>
+                    <th></th>
+                    <th></th>
+                <% } %>
+            </tr>
+            <!-- Repeatable Template Row -->
+            <% for(let count = 0; count < ContactList.length; count++) { %>
+                <tr>
+                    <td>
+                        <%= ContactList[count].name %>
+                    </td>
+                    <td>
+                        <%= ContactList[count].number %>
+                    </td>
+                    <td><%= ContactList[count].email %></td>
+                    <% if(typeof displayName == 'string' && displayName) { %>
+                    <td><a href="/contact-list/edit/<%=ContactList[count]._id%>">
+                            <i></i> Edit</a>
+                    </td>
+                    <td>
+                        <a href="/contact-list/delete/<%=ContactList[count]._id%>">
+                            <i></i> Delete</a>
+                    </td>
+                    <% } %>
+                </tr>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</div>
+<!-- Include footer. -->
+<%- include('../partials/footer'); %>
