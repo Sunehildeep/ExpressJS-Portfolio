@@ -10,18 +10,13 @@ Date: 18th Sept, 2022
 
     <div class="navheader" id="navheader">
         <ul>
+
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Me</a></li>
             <li><a href="/experience">Services</a></li>
             <li><img src="/images/logo.png"></li>
             <li><a href="/projects">My Work</a></li>
             <li><a href="/contact">Contact Me</a></li>
-            <% if(typeof displayName == 'string' && displayName) { %>
-                <li><a href="/logout">Logout</a></li>
-            <% } else { %>
-            <li><a href="/login">Login</a></li>
-            <% } %>
-
         </ul>
     </div>
 </nav>
